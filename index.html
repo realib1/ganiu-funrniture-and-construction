@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/style.css">
+
+  <!-- JS -->
+  <script type="module" src="/src/main.js" defer></script>
+
+  <title>Ganiu Furniture and Construction</title>
+</head>
+
+<body class="font-body">
+
+  <!-- Navigation Menu -->
+  <div class="fixed top-0 w-full z-50 nav-div p-2 bg-primary text-secondary-light">
+    <nav class="nav-menuMain lg:w-10/12 w-11/12 mx-auto py-4 flex justify-between items-center">
+      <a href="#logo" class="font-bold text-xl font-header">
+        <div class="logo">
+          GAFCON
+          <!-- <img src="/src/logo.png" alt="Ganiu Furniture and Construction Logo"> -->
+        </div>
+      </a>
+
+      <!-- Menu Items -->
+      <div class="menuItems">
+        <ul
+          class="nav-menuItems absolute top-18 md:top-0 w-full left-0 px-6 pb-5 md:p-0 space-y-5 md:space-y-0 bg-primary md:relative hidden md:flex flex-col md:flex-row justify-between items-center gap-5 font-header">
+          <li class="nav-menuItem">
+            <!-- Dropdown -->
+            <a href="/src/products.html" class="nav-link py-1 mx-1 hover:border-b-2">Products
+              <svg class="w-6 h-6 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m8 10 4 4 4-4" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="/src/about.html" class="nav-link py-1 mx-1 hover:border-b-2">About</a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="#portfolio" class="nav-link py-1 mx-1 hover:border-b-2">Portfolio</a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="/src/blog.html" class="nav-link py-1 mx-1 hover:border-b-2">Blog</a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="/src/contact.html" class="nav-link py-1 mx-1 hover:border-b-2">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <button class="nav-btn text-secondary-light md:hidden cursor-pointer" aria-controls="mobile-menu"
+        aria-expanded="false">
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+          viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section relative min-h-screen overflow-hidden pt-55 bg-primary">
+    <div class="before:absolute before:inset-0
+               before:bg-[url('/src/img/hero-bg.jpg')] 
+               before:bg-cover before:bg-center 
+               before:opacity-30  <!-- Adjust opacity (0-100) -->
+               before:z-0 before:content-['']">
+    </div>
+    <div class="hero-content relative lg:w-10/12 w-11/12 mx-auto flex flex-col justify-center items-center text-center">
+      <h1 class="text-5xl fontbol font-header text-white">Redefining Furniture</h1>
+      <p class="text-white md:w-8/12 mt-4">At Kings Furnitures, we specialise in crafting exquisite furniture pieces
+        that elevate your living spaces. With our passion for design and commitment to quality, we offer a wide range of
+        furniture options to suit your style and preferences.</p>
+      <div class="hero-btns mt-12">
+        <a href="#services"
+          class="btn-primary bg-secondary text-white px-4 py-2 flex  items-center gap-2 font-header">View All
+          <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </a>
+        <!-- <a href="#contact" class="btn-secondary hover:bg-secondary-dark">Contact Us</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section-->
+  <section class="about">
+    <div class="container lg:w-10/12 w-11/12 py-16 mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+        <h2 class="text-3xl text-wrap font-header block md:hidden">About Ganiu Furniture and Construction</h2>
+        <!-- Image -->
+        <div class="img bg-red-500 md:w-6/12 w-full h-full mr-5">
+          <img src="/src/img/about-img.jpg" alt="about image" class="object-cover w-full h-full">
+        </div>
+
+        <!-- About text -->
+        <div class="about-text ms-10 w-full">
+          <h2 class="text-3xl text-wrap font-header hidden md:block">About Ganiu Furniture and Construction</h2>
+          <p class="mt-5 text-gray-700">We understand that your home is a reflection of your personality and taste.
+            That's why we strive to create furniture that not only serves its functional purpose but also adds a touch
+            of elegance and sophistication to your living spaces. Our team of skilled artisans and designers are
+            dedicated to producing furniture pieces that are not just visually stunning, but also built to stand the
+            test of time.
+            <br><br>
+            Transform your living spaces into havens of style and comfort with King's Furnitures. Experience the
+            difference that passion for design, commitment to quality, and personalized service can make. Discover
+            furniture that not only enhances your lifestyle but also becomes an integral part of your home's story.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Available Stock -->
+  <section class="stock py-16">
+    <div class="container lg:w-10/12 w-11/12 mx-auto">
+      <h2 class="text-3xl text-center font-header text-gray-800">Available Stock</h2>
+      <div class="stock-item bg-primarys grid grid-cols-1 md:grid-cols-3 gap-5 space-y-5 md:space-y-0 mt-10">
+        <!-- Stock Item -->
+
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/swedishchair.jpg" alt="stock item 1"
+              class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/sofa.jpg" alt="stock item 1" class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/babystool.jpg" alt="stock item 1" class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/dinningset.jpg" alt="stock item 1" class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/barstool.jpg" alt="stock item 1" class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/restaurantsofa.jpg" alt="stock item 1"
+              class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/pizzsofa.jpg" alt="stock item 1" class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/bookstool.jpg" alt="stock item 1" class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+        <div class="stock-item bg-primary">
+          <a href="">
+            <img src="/src/img/products/swedishchair.jpg" alt="stock item 1"
+              class="object-cover w-full mx-auto md:h-96">
+            <h3 class="text-lg text-center font-header text-secondary item-name mt-3">Product Name</h3>
+            <p class="text-center py-2 mb-4 font-medium text-gray-100"><span class="currentcy">&#x20B5;</span> <span
+                class="price">200</span></p>
+          </a>
+        </div>
+
+      </div>
+      <!-- See More -->
+      <div class="mt-10 flex justify-end w-full">
+        <a href="#seemore"
+          class="btn-primary border-2 border-secondary text-secondary hover:text-white hover:bg-secondary px-4 py-2 flex  items-center gap-2 font-header">See
+          More
+          <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products category -->
+  <section class="products-category">
+    <div class="container lg:w-11/12 w-10/12 mx-auto py-16">
+      <h2 class="text-3xl font-header mb-6 text-center">Products Categories</h2>
+
+      <div class="categories-gap flex flex-col gap-4">
+        <!-- Categories -->
+        <div class="categories flex flex-wrap justify-center gap-4">
+
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-4/12 md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/wardrobes.jpg" alt="Wardrobes"
+                class="object-cover transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#61261999] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">Wardrobes</span>
+              </div>
+            </a>
+          </div>
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-7/12 md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/beds.jpg" alt="Sofa Beds"
+                class=" object-cover transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#18171799] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">Sofa Beds</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Categories -->
+        <div class="categories flex flex-wrap justify-center gap-4">
+
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-[46%] md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/sofachair.jpg" alt="Sofa Chairs"
+                class="object-cover transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#18171799] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">Sofa Chairs</span>
+              </div>
+            </a>
+          </div>
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-[46%] md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/centertable2.jpg" alt="Center Tables"
+                class=" object-cover transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#61261999] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">Center Tables</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Categories -->
+        <div class="categories flex flex-wrap justify-center gap-4">
+
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-7/12 md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/dinningchairs.jpg" alt="Dinning Chairs"
+                class=" object-cover transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#18171799] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">Dinning Chairs</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-4/12 md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/dinningtable.jpg" alt="Dinning Tables"
+                class="object-contain transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#61261999] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">Dinning Tables</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Categories -->
+        <div class="categories flex flex-wrap justify-center gap-4">
+
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-[46%] md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/tvstand.jpg" alt="TV Stands"
+                class="object-cover transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#18171799] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">TV Stands</span>
+              </div>
+            </a>
+          </div>
+          <!-- Category -->
+          <div class="category relative group overflow-hidden md:w-[46%] md:h-96">
+            <a href="">
+              <!-- Background image or <img> tag -->
+              <img src="/src/img/categories/shoerack.jpg" alt="Shoe Racks"
+                class=" object-cover transform group-hover:scale-105 transition duration-300" />
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-[#61261999] flex items-center justify-center  transition duration-300">
+                <span class="text-white text-xl font-semibold font-header">Shoe Racks</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <div class="container lg:w-10/12 w-11/12 mx-auto py-16">
+      <h2 class="text-3xl font-header mb-6 text-center">Portfolio</h2>
+
+      <!-- Portfolioi Items -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <div class="portfolio-item md:hidden block">
+          <a href="">
+            <img src="/src/img/portfolio/portfolio2.jpg" alt="portfolio item 1"
+              class="object-cover w-full mx-auto h-70">
+          </a>
+        </div>
+
+        <div class="portfolio-item grid grid-col-1 gap-3">
+
+          <div class="grid grid-cols-2 gap-3">
+            <!-- Portfolio Item -->
+            <div class="portfolio-item">
+              <a href="">
+                <img src="/src/img/portfolio/portfolio4.jpg" alt="portfolio item 1"
+                  class="object-cover w-full mx-auto h-60">
+              </a>
+            </div>
+            <!-- Portfolio Item -->
+            <div class="portfolio-item">
+              <a href="">
+                <img src="/src/img/portfolio/portfolio3.jpg" alt="portfolio item 1"
+                  class="object-cover w-full mx-auto h-60">
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-item hidden md:block">
+            <a href="">
+              <img src="/src/img/portfolio/portfolio2.jpg" alt="portfolio item 1"
+                class="object-cover w-full mx-auto h-70">
+            </a>
+          </div>
+        </div>
+        <!-- Portfolio Item -->
+        <div class="portfolio-item">
+          <a href="">
+            <img src="/src/img/portfolio/portfolio1.jpg" alt="portfolio item 1"
+              class="object-cover w-full mx-auto h-full">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- See More -->
+      <div class="mt-10 flex justify-end w-full">
+        <a href="#seemore"
+          class="btn-primary border-2 border-secondary text-secondary hover:text-white hover:bg-secondary px-4 py-2 flex  items-center gap-2 font-header">See
+          More
+          <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container lg:w-10/12 w-11/12 mx-auto py-16">
+      <h2 class="text-3xl font-header mb-6 text-center">Testimonials</h2>
+
+      <!-- Carousel Container -->
+      <div class="relative overflow-hidden group carousel-container">
+        <!-- Carousel Track -->
+        <div id="testimonialCarousel" class="flex transition-transform duration-500 ease-in-out gap-3"
+          style="transform: translateX(0)">
+
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <!-- Testimonial Items -->
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+          <div class="flex-none w-full md:w-[calc(33.333%-10px)] bg-secondary p-6 rounded-lg shadow-lg">
+            <div class="text-white flex justify-center mb-4">
+              <svg class="w-12" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+              </svg>
+            </div>
+            <p class="text-white text-center mb-4 mt-10 italic">"Testimonial 1 content goes here. This is a sample
+              testimonial text for demonstration purposes."</p>
+            <h3 class="text-center font-bold text-white font-header">John Doe</h3>
+            <!-- <p class="text-center text-sm text-gray-500">CEO, Company</p> -->
+          </div>
+
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-btns flex items-center justify-center space-x-12 mt-5">
+          <button id="prevButton"
+            class="cursor-pointer  text-secondary p-2 border-2 border-secondary rounded-full transition-colors disabled:opacity-50">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h14M5 12l4-4m-4 4 4 4" />
+            </svg>
+
+          </button>
+          <button id="nextButton"
+            class="cursor-pointer text-secondary p-2 border-2 border-secondary rounded-full transition-colors disabled:opacity-50">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 12H5m14 0-4 4m4-4-4-4" />
+            </svg>
+
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special offer -->
+  <section class="bg-primary">
+    <div class="container mx-auto py-16 w-11/12 lg:w-10/12">
+      <div class="flex flex-col-reverse lg:flex-row justify-between items-center gap-5">
+        <div class="offer">
+          <h2 class="text-secondary font-header font-bold text-4xl mt-10 lg:mt-auto">MODERN FURNITURE SPECIAL OFFER</h2>
+          <p class="text-white mt-6 lg:mt-3 max-w-md">Lorem ipsum diolor emet atet lorem ipsum dilore amet lorem iosum
+            dilor amet lorem ipsum diilor amet ncdnd dnjsdkkdls</p>
+
+          <!-- see more -->
+          <div class="mt-10">
+            <a href="#seemore"
+              class="btn-primary border-2 border-secondary text-secondary hover:text-white hover:bg-secondary px-4 py-2 items-center gap-2 font-header inline">See
+              More
+              <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 12H5m14 0-4 4m4-4-4-4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <img src="/src/img/sofa-.jpg" alt="Offer Image" class="w-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="blog">
+    <div class="container mx-auto py-16 w-11/12 lg:w-10/12">
+      <h2 class="text-3xl font-header mb-6 text-center">Blog</h2>
+
+      <!-- Blog posts -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+       
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary">
+          <a href="">
+            <img src="/src/img/blog/blog-img1.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+       
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary">
+          <a href="">
+            <img src="/src/img/blog/blog-img2.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+       
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary">
+          <a href="">
+            <img src="/src/img/blog/blog-img3.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-tertiary">
+    <div class="container mx-auto py-10 w-11/12 lg:w-10/12">
+      <div class="footer-content grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+        <!-- Footer Column -->
+        <div class="footer-column">
+          <h3 class="text-white font-header font-bold text-xl mb-4">GAFCON</h3>
+          <p class="text-white max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+
+          <!-- Footer Column -->
+          <div class="footer-column mt-5 space-y-1">
+            <p class="text-white">123, ABC St., Country</p>
+            <p class="text-white">+2338096542356</p>
+            <p class="text-white">
+              <a href="mailto:hello@kingsfurniture.com">hello@gafcon.com</a>
+            </p>
+          </div>
+
+          <!-- socials -->
+          <div class="socials mt-5">
+            <ul class="text-white flex items-center gap-3">
+              <li class="mb-2"><a href="" class="hover:text-secondary">
+                  <svg class="size-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                  </svg>
+                </a></li>
+              <li class="mb-2"><a href="" class="hover:text-secondary">
+                  <svg class="size-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+                  </svg>
+                </a></li>
+              <li class="mb-2"><a href="" class="hover:text-secondary">
+                  <svg class="size-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                  </svg>
+                </a></li>
+              <li class="mb-2"><a href="" class="hover:text-secondary">
+                  <svg class="size-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+                  </svg>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer Column -->
+        <div class="footer-column">
+          <h3 class="text-white font-header text-xl mb-3">Quick Links</h3>
+          <ul class="text-white">
+            <li class="mb-2"><a href="" class="hover:text-secondary">Home</a></li>
+            <li class="mb-2"><a href="" class="hover:text-secondary">About</a></li>
+            <li class="mb-2"><a href="" class="hover:text-secondary">Portfolio</a></li>
+            <li class="mb-2"><a href="" class="hover:text-secondary">Blog</a></li>
+            <li class="mb-2"><a href="" class="hover:text-secondary">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright text-center w-full border-t-2 border-gray-300 pt-8">
+        <p class="text-white text"> &COPY; Ganiu Furniture and Construction • <span id="footer-year"></span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
