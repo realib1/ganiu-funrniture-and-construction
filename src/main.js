@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleMenu(navMenu);
   });
 
+
+   // Footer Year
+   const year = new Date().getFullYear();
+   const footerYear = document.getElementById('footer-year');
+   footerYear.textContent = year;
+
   const carousel = document.getElementById("testimonialCarousel");
   const prevBtn = document.getElementById("prevButton");
   const nextBtn = document.getElementById("nextButton");
@@ -124,8 +130,4 @@ document.addEventListener("DOMContentLoaded", function () {
   updateButtons();
   startAutoPlay();
 
-  // Footer Year
-    const year = new Date().getFullYear();
-    const footerYear = document.getElementById('footer-year');
-    footerYear.textContent = year;
 });
