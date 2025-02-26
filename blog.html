@@ -27,34 +27,35 @@
         </div>
       </a>
 
-      <!-- Menu Items -->
-      <div class="menuItems">
-        <ul
-          class="nav-menuItems absolute top-18 md:top-0 w-full left-0 px-6 pb-5 md:p-0 space-y-5 md:space-y-0 bg-primary md:relative hidden md:flex flex-col md:flex-row justify-between items-center gap-5 font-header">
-          <li class="nav-menuItem">
-            <!-- Dropdown -->
-            <a href="/src/products.html" class="nav-link py-1 mx-1 hover:border-b-2">Products
-              <svg class="w-6 h-6 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m8 10 4 4 4-4" />
-              </svg>
-            </a>
-          </li>
-          <li class="nav-menuItem">
-            <a href="/src/about.html" class="nav-link py-1 mx-1 hover:border-b-2">About</a>
-          </li>
-          <li class="nav-menuItem">
-            <a href="#portfolio0" class="nav-link py-1 mx-1 hover:border-b-2">Portfolio</a>
-          </li>
-          <li class="nav-menuItem">
-            <a href="/src/blog.html" class="nav-link py-1 mx-1 hover:border-b-2">Blog</a>
-          </li>
-          <li class="nav-menuItem">
-            <a href="/src/contact.html" class="nav-link py-1 mx-1 hover:border-b-2">Contact</a>
-          </li>
-        </ul>
-      </div>
+                 <!-- Menu Items -->
+            <div class="menuItems">
+                <ul
+                    class="nav-menuItems absolute top-18 md:top-0 w-full left-0 px-6 pb-5 md:p-0 space-y-5 md:space-y-0 bg-primary md:relative hidden md:flex flex-col md:flex-row justify-between items-center gap-5 font-header">
+                    <li class="nav-menuItem">
+                        <!-- Dropdown -->
+                        <a href="products.html" class="nav-link py-1 mx-1 hover:border-b-2">Products
+                            <svg class="w-6 h-6 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m8 10 4 4 4-4" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-menuItem">
+                        <a href="about.html" class="nav-link py-1 mx-1 hover:border-b-2">About</a>
+                    </li>
+                    <li class="nav-menuItem">
+                        <a href="portfolio.html" class="nav-link py-1 mx-1 hover:border-b-2">Portfolio</a>
+                    </li>
+                    <li class="nav-menuItem">
+                        <a href="blog.html" class="nav-link py-1 mx-1 hover:border-b-2">Blog</a>
+                    </li>
+                    <li class="nav-menuItem">
+                        <a href="contact.html" class="nav-link py-1 mx-1 hover:border-b-2">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
 
       <!-- Mobile Menu -->
       <button class="nav-btn text-secondary-light md:hidden cursor-pointer" aria-controls="mobile-menu"
@@ -70,7 +71,7 @@
   <!-- Main section -->
    <main class="py-16">
 
-    <!-- Contact Header -->
+    <!-- Header -->
     <section class="hero-section relative h-32 flex justify-center items-center mt-16 w-11/12 mx-auto overflow-hidden bg-primary">
         <div class="before:absolute before:inset-0
                    before:bg-[url('/src/img/bg/contact-bg.jpg')] 
@@ -80,68 +81,112 @@
         </div>
         <div class="hero-content relative mx-auto flex flex-col justify-center items-center text-center">
          
-            <h1 class="text-white font-bold font-header text-4xl mb-4">Contact Us</h1>
+            <h1 class="text-white font-bold font-header text-4xl mb-4">Our Blog</h1>
 
         </div>
       </section>
 
-      <!-- Contact details -->
-        <section class="contact-details">
-            <div class="container w-11/12 lg:w-10/12 mx-auto mt-16">
-            <div class="contact-form-content grid grid-cols-1 md:grid-cols-2 md:w-10/12  mx-auto">
-            <div class="contact-img">
-                <img src="/src/img/contactform.jpg" alt="Contact image" class="w-full h-full object-cover">
+<!-- Blog -->
+<section class="blog">
+    <div class="container mx-auto py-16 w-11/12 lg:w-10/12">
+      <!-- Blog posts -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+       
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary max-w-md mx-auto">
+          <a href="">
+            <img src="/src/img/blog/blog-img1.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
             </div>
-
-            <!-- Contact info -->
-              <div class="contact-info bg-primary flex items-center p-10">
-                <div>
-                <h3 class="font-bold font-header text-secondary-light text-3xl mb-4">We’d love to hear <br> from you</h3>
-
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/address.svg" alt="" class="mt-1 size-6">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Address</h4>
-                        <p class="text-gray-200 font-medium py-2">Block 16, Tamale Street, Ghana</p>
-                    </div>
-                </div>
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/email.svg" alt="" class="mt-1 size-5">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Email Address</h4>
-                        <p class="text-gray-200 font-medium py-2">hello@gafcon.com</p>
-                    </div>
-                </div>
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/phone.svg" alt="" class="mt-1 size-6">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Phone Number</h4>
-                        <p class="text-gray-200 font-medium py-2">+233 804 5671 986</p>
-                    </div>
-                </div>
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/operation.svg" alt="" class="mt-1 size-6">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Hours Of Operation</h4>
-                        <p class="text-gray-200 font-medium pt-2">Weekdays: 08:00am - 06:00pm</p>
-                        <p class="text-gray-200 font-medium pt-1 pb-2">Weekends: 10:00am - 04:00pm</p>
-                    </div>
-                </div>
-               
-
-  </div>
-              </div>
-            </div>
+          </a>
         </div>
-        </section>
+       
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary max-w-md mx-auto">
+          <a href="">
+            <img src="/src/img/blog/blog-img2.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+       
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary max-w-md mx-auto">
+          <a href="">
+            <img src="/src/img/blog/blog-img3.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary max-w-md mx-auto">
+          <a href="">
+            <img src="/src/img/blog/blog-img3.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary max-w-md mx-auto">
+          <a href="">
+            <img src="/src/img/blog/blog-img3.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Blog Post -->
+        <div class="blog-post border-t-3 border-secondary max-w-md mx-auto">
+          <a href="">
+            <img src="/src/img/blog/blog-img3.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+            <p class="blog-date text-sm text-gray-500 my-2">March 1, 2021</p>
+            <h3 class="blog-title text-gray-800 text-lg font-medium font-header">Blog Post </h3>
+            <p class="blog-content text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam,
+              quidem.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+       <!-- See More -->
+       <div class="mt-10 flex justify-end w-full">
+        <a href="#seemore"
+          class="btn-primary border-2 border-secondary text-secondary hover:text-white hover:bg-secondary px-4 py-2 flex  items-center gap-2 font-header transition-all duration-300 ease-in-out">See More
+          <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </a>
+      </div>
+      </div>
+  </section>
    </main>
 
   <!-- Footer -->
