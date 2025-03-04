@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/public/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/public/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/public/favicon/site.webmanifest" />
+
 
     <!-- JS -->
-    <script type="module" src="main.js" defer></script>
+    <script type="module" src="/src/main.js" defer></script>
 
     <title>Ganiu Furniture and Construction</title>
 </head>
@@ -21,11 +30,11 @@
     <div class="fixed top-0 w-full z-50 nav-div p-2 bg-primary text-secondary-light">
         <nav class="nav-menuMain lg:w-10/12 w-11/12 mx-auto py-4 flex justify-between items-center">
             <a href="/index.html" class="font-bold text-xl font-header">
-                <div class="logo">
-                    GAFCON
-                    <!-- <img src="logo.png" alt="Ganiu Furniture and Construction Logo"> -->
+                <div class="logo w-10 h-10">
+                  
+                  <img src="/src/img/logo-s.png" alt="Ganiu Furniture and Construction Logo">
                 </div>
-            </a>
+              </a>
 
             <!-- Menu Items -->
             <div class="menuItems">
@@ -33,7 +42,7 @@
                     class="nav-menuItems absolute top-18 md:top-0 w-full left-0 px-6 pb-5 md:p-0 space-y-5 md:space-y-0 bg-primary md:relative hidden md:flex flex-col md:flex-row justify-between items-center gap-5 font-header">
                     <li class="nav-menuItem">
                         <!-- Dropdown -->
-                        <a href="products.html" class="nav-link py-1 mx-1 hover:border-b-2">Products
+                        <a href="/src/products.html" class="nav-link py-1 mx-1 hover:border-b-2">Products
                             <svg class="w-6 h-6 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -42,16 +51,16 @@
                         </a>
                     </li>
                     <li class="nav-menuItem">
-                        <a href="about.html" class="nav-link py-1 mx-1 hover:border-b-2">About</a>
+                        <a href="/src/about.html" class="nav-link py-1 mx-1 hover:border-b-2">About</a>
                     </li>
                     <li class="nav-menuItem">
-                        <a href="portfolio.html" class="nav-link py-1 mx-1 hover:border-b-2">Portfolio</a>
+                        <a href="/src/portfolio.html" class="nav-link py-1 mx-1 hover:border-b-2">Portfolio</a>
                     </li>
                     <li class="nav-menuItem">
-                        <a href="blog.html" class="nav-link py-1 mx-1 hover:border-b-2">Blog</a>
+                        <a href="/src/blog.html" class="nav-link py-1 mx-1 hover:border-b-2">Blog</a>
                     </li>
                     <li class="nav-menuItem">
-                        <a href="contact.html" class="nav-link py-1 mx-1 hover:border-b-2">Contact</a>
+                        <a href="/src/contact.html" class="nav-link py-1 mx-1 hover:border-b-2">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -70,11 +79,11 @@
     <!-- Main section -->
     <main class="py-16">
 
-        <!-- Header -->
+        <!-- Contact Header -->
         <section
             class="hero-section relative h-32 flex justify-center items-center mt-16 w-11/12 mx-auto overflow-hidden bg-primary">
             <div class="before:absolute before:inset-0
-                   before:bg-[url('img/bg/contact-bg.jpg')] 
+                   before:bg-[url('/src/img/bg/contact-bg.jpg')] 
                    before:bg-cover before:bg-center 
                    before:opacity-30  
                    before:z-0 before:content-['']">
@@ -94,7 +103,7 @@
                     </h2>
                     <!-- Image -->
                     <div class="img bg-red-500 md:w-9/12 w-full lg:h-full h-96 mr-5">
-                        <img src="img/about-img.jpg" alt="about image" class="object-cover w-full h-full">
+                        <img src="/src/img/about-img.jpg" alt="about image" class="object-cover w-full h-full">
                     </div>
 
                     <!-- About text -->
@@ -131,7 +140,8 @@
                     <div class="description-text w-fit">
                         <p class="description-head uppercase text-gray-400 font-header font-medium text-sm">What we are
                             known for</p>
-                        <h2 class="description-title md:text-3xl text-2xl font-header uppercase my-4">ensuring utmost satisfaction
+                        <h2 class="description-title md:text-3xl text-2xl font-header uppercase my-4">ensuring utmost
+                            satisfaction
                             and exceptional shopping experiences.</h2>
                         <p class="description-content mt-5 text-gray-700">We are committed to providing our customers
                             with the best shopping experience possible. Our team of experts is always on hand to help
@@ -142,7 +152,7 @@
                     </div>
 
                     <div class="description-img w-it">
-                        <img src="img/about.jpg" alt="description image"
+                        <img src="/src/img/about.jpg" alt="description image"
                             class="object-cover w-full lg:h-full h-96">
                     </div>
                 </div>
@@ -150,7 +160,7 @@
                 <div class="more-description mt-16">
                     <div class="grid md:grid-cols-2 grid-cols-1 gap-14">
                         <div class="description-item flex flex-col md:flex-row space-y-2 md:space-y-0 max-w-lg">
-                            <img src="img/icons/craftmanship.svg" alt="craftmanship"
+                            <img src="/src/img/icons/craftmanship.svg" alt="craftmanship"
                                 class="w-8 h-8 p-2 rounded-md mr-3 bg-secondary">
                             <div>
 
@@ -165,172 +175,218 @@
 
                         </div>
                         <div class="description-item flex flex-col md:flex-row space-y-2 md:space-y-0 max-w-lg">
-                            <img src="img/icons/diverse.svg" alt="diverse"
+                            <img src="/src/img/icons/diverse.svg" alt="diverse"
                                 class="w-8 h-8 p-2 rounded-md mr-3 bg-secondary">
                             <div>
 
-                                <h3 class="description-item-title md:text-2xl text-xl font-header font-medium">Diverse Furniture
+                                <h3 class="description-item-title md:text-2xl text-xl font-header font-medium">Diverse
+                                    Furniture
                                     Categories</h3>
-                                <p class="description-item-content mt-3 text-sm text-gray-700">We understand that your home is a reflection of your unique personality and lifestyle. That's why we offer a diverse range of furniture categories, ensuring there's a perfect fit for every room.</p>
+                                <p class="description-item-content mt-3 text-sm text-gray-700">We understand that your
+                                    home is a reflection of your unique personality and lifestyle. That's why we offer a
+                                    diverse range of furniture categories, ensuring there's a perfect fit for every
+                                    room.</p>
                             </div>
 
                         </div>
                         <div class="description-item flex flex-col md:flex-row space-y-2 md:space-y-0 max-w-lg">
-                            <img src="img/icons/attention.svg" alt="craftmanship"
+                            <img src="/src/img/icons/attention.svg" alt="craftmanship"
                                 class="w-8 h-8 p-2 rounded-md mr-3 bg-secondary">
                             <div>
 
                                 <h3 class="description-item-title md:text-2xl text-xl font-header font-medium">
                                     Attention to Detail
                                 </h3>
-                                <p class="description-item-content mt-3 text-sm text-gray-700">We take pride in our commitment to exceptional craftsmanship and attention to detail. Each furniture piece is carefully constructed using premium materials, ensuring longevity and reliability.</p>
+                                <p class="description-item-content mt-3 text-sm text-gray-700">We take pride in our
+                                    commitment to exceptional craftsmanship and attention to detail. Each furniture
+                                    piece is carefully constructed using premium materials, ensuring longevity and
+                                    reliability.</p>
                             </div>
 
                         </div>
                         <div class="description-item flex flex-col md:flex-row space-y-2 md:space-y-0 max-w-lg">
-                            <img src="img/icons/customer-service.svg" alt="craftmanship"
+                            <img src="/src/img/icons/customer-service.svg" alt="craftmanship"
                                 class="w-8 h-8 p-2 rounded-md mr-3 bg-secondary">
                             <div>
 
                                 <h3 class="description-item-title md:text-2xl text-xl font-header font-medium">
                                     Customer-Centric Approach
                                 </h3>
-                                <p class="description-item-content mt-3 text-sm text-gray-700">We strive to provide an exceptional shopping experience. Our knowledgeable staff are ready to assist you, guiding you through our extensive collection and helping you make the perfect furniture choices.</p>
+                                <p class="description-item-content mt-3 text-sm text-gray-700">We strive to provide an
+                                    exceptional shopping experience. Our knowledgeable staff are ready to assist you,
+                                    guiding you through our extensive collection and helping you make the perfect
+                                    furniture choices.</p>
                             </div>
 
                         </div>
                     </div>
                 </div>
-        
+
             </div>
-            </section>
+        </section>
 
-            <!-- Our team -->
-             <section class="team">
-                <div class="container lg:w-10/12 w-11/12 mx-auto py-16">
-                    <div class="team-content">
-                        <h2 class="team-title text-3xl font-header text-center mb-10">Meet our Amazing Team</h2>
+        <!-- Our team -->
+        <section class="team">
+            <div class="container lg:w-10/12 w-11/12 mx-auto py-16">
+                <div class="team-content">
+                    <h2 class="team-title text-3xl font-header text-center mb-10">Meet our Amazing Team</h2>
 
-                        <div class="team-members grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
-                      
+                    <div class="team-members grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+
                         <!-- Team Member -->
                         <div class="team-member relative flex flex-col space-y-4 md:space-y-0">
-                            <img src="img/team/1.jpg" alt="team member" class="team-member-img  mx-auto w-full h-80">
-                            <div class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
+                            <img src="/src/img/team/1.jpg" alt="team member"
+                                class="team-member-img  mx-auto w-full h-80">
+                            <div
+                                class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
                                 <div class="team-member-name-post">
-                                <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad</h3>
-                                <p class="team-member-position text-xs font-header text-gray-300">Creative Director</p>
-                            </div>
+                                    <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad
+                                    </h3>
+                                    <p class="team-member-position text-xs font-header text-gray-300">Creative Director
+                                    </p>
+                                </div>
 
-                            <div class="team-member-socials">
-                                <ul class="flex gap-3 items-list">
-                                    
-                                    <li><a href="#"><img src="img/icons/instagram.svg" alt="instagram" class="w-5 h-5"></a></li>
-                                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter" class="w-5 h-5"></a></li>
-                                 
-                                </ul>
+                                <div class="team-member-socials">
+                                    <ul class="flex gap-3 items-list">
+
+                                        <li><a href="#"><img src="/src/img/icons/instagram.svg" alt="instagram"
+                                                    class="w-5 h-5"></a></li>
+                                        <li><a href="#"><img src="/src/img/icons/twitter.svg" alt="twitter"
+                                                    class="w-5 h-5"></a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <!-- Team Member -->
                         <div class="team-member relative flex flex-col space-y-4 md:space-y-0">
-                            <img src="img/team/2.jpg" alt="team member" class="team-member-img  mx-auto w-full h-80">
-                            <div class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
+                            <img src="/src/img/team/2.jpg" alt="team member"
+                                class="team-member-img  mx-auto w-full h-80">
+                            <div
+                                class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
                                 <div class="team-member-name-post">
-                                <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad</h3>
-                                <p class="team-member-position text-xs font-header text-gray-300">Creative Director</p>
-                            </div>
+                                    <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad
+                                    </h3>
+                                    <p class="team-member-position text-xs font-header text-gray-300">Creative Director
+                                    </p>
+                                </div>
 
-                            <div class="team-member-socials">
-                                <ul class="flex gap-3 items-list">
-                                    
-                                    <li><a href="#"><img src="img/icons/instagram.svg" alt="instagram" class="w-5 h-5"></a></li>
-                                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter" class="w-5 h-5"></a></li>
-                                 
-                                </ul>
+                                <div class="team-member-socials">
+                                    <ul class="flex gap-3 items-list">
+
+                                        <li><a href="#"><img src="/src/img/icons/instagram.svg" alt="instagram"
+                                                    class="w-5 h-5"></a></li>
+                                        <li><a href="#"><img src="/src/img/icons/twitter.svg" alt="twitter"
+                                                    class="w-5 h-5"></a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <!-- Team Member -->
                         <div class="team-member relative flex flex-col space-y-4 md:space-y-0">
-                            <img src="img/team/3.jpg" alt="team member" class="team-member-img  mx-auto w-full h-80">
-                            <div class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
+                            <img src="/src/img/team/3.jpg" alt="team member"
+                                class="team-member-img  mx-auto w-full h-80">
+                            <div
+                                class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
                                 <div class="team-member-name-post">
-                                <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad</h3>
-                                <p class="team-member-position text-xs font-header text-gray-300">Creative Director</p>
-                            </div>
+                                    <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad
+                                    </h3>
+                                    <p class="team-member-position text-xs font-header text-gray-300">Creative Director
+                                    </p>
+                                </div>
 
-                            <div class="team-member-socials">
-                                <ul class="flex gap-3 items-list">
-                                    
-                                    <li><a href="#"><img src="img/icons/instagram.svg" alt="instagram" class="w-5 h-5"></a></li>
-                                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter" class="w-5 h-5"></a></li>
-                                 
-                                </ul>
+                                <div class="team-member-socials">
+                                    <ul class="flex gap-3 items-list">
+
+                                        <li><a href="#"><img src="/src/img/icons/instagram.svg" alt="instagram"
+                                                    class="w-5 h-5"></a></li>
+                                        <li><a href="#"><img src="/src/img/icons/twitter.svg" alt="twitter"
+                                                    class="w-5 h-5"></a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <!-- Team Member -->
                         <div class="team-member relative flex flex-col space-y-4 md:space-y-0">
-                            <img src="img/team/4.jpg" alt="team member" class="team-member-img  mx-auto w-full h-80">
-                            <div class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
+                            <img src="/src/img/team/4.jpg" alt="team member"
+                                class="team-member-img  mx-auto w-full h-80">
+                            <div
+                                class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
                                 <div class="team-member-name-post">
-                                <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad</h3>
-                                <p class="team-member-position text-xs font-header text-gray-300">Creative Director</p>
-                            </div>
+                                    <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad
+                                    </h3>
+                                    <p class="team-member-position text-xs font-header text-gray-300">Creative Director
+                                    </p>
+                                </div>
 
-                            <div class="team-member-socials">
-                                <ul class="flex gap-3 items-list">
-                                    
-                                    <li><a href="#"><img src="img/icons/instagram.svg" alt="instagram" class="w-5 h-5"></a></li>
-                                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter" class="w-5 h-5"></a></li>
-                                 
-                                </ul>
+                                <div class="team-member-socials">
+                                    <ul class="flex gap-3 items-list">
+
+                                        <li><a href="#"><img src="/src/img/icons/instagram.svg" alt="instagram"
+                                                    class="w-5 h-5"></a></li>
+                                        <li><a href="#"><img src="/src/img/icons/twitter.svg" alt="twitter"
+                                                    class="w-5 h-5"></a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <!-- Team Member -->
                         <div class="team-member relative flex flex-col space-y-4 md:space-y-0">
-                            <img src="img/team/5.jpg" alt="team member" class="team-member-img  mx-auto w-full h-80">
-                            <div class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
+                            <img src="/src/img/team/5.jpg" alt="team member"
+                                class="team-member-img  mx-auto w-full h-80">
+                            <div
+                                class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
                                 <div class="team-member-name-post">
-                                <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad</h3>
-                                <p class="team-member-position text-xs font-header text-gray-300">Creative Director</p>
-                            </div>
+                                    <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad
+                                    </h3>
+                                    <p class="team-member-position text-xs font-header text-gray-300">Creative Director
+                                    </p>
+                                </div>
 
-                            <div class="team-member-socials">
-                                <ul class="flex gap-3 items-list">
-                                    
-                                    <li><a href="#"><img src="img/icons/instagram.svg" alt="instagram" class="w-5 h-5"></a></li>
-                                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter" class="w-5 h-5"></a></li>
-                                 
-                                </ul>
+                                <div class="team-member-socials">
+                                    <ul class="flex gap-3 items-list">
+
+                                        <li><a href="#"><img src="/src/img/icons/instagram.svg" alt="instagram"
+                                                    class="w-5 h-5"></a></li>
+                                        <li><a href="#"><img src="/src/img/icons/twitter.svg" alt="twitter"
+                                                    class="w-5 h-5"></a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <!-- Team Member -->
                         <div class="team-member relative flex flex-col space-y-4 md:space-y-0">
-                            <img src="img/team/6.jpg" alt="team member" class="team-member-img  mx-auto w-full h-80">
-                            <div class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
+                            <img src="/src/img/team/6.jpg" alt="team member"
+                                class="team-member-img  mx-auto w-full h-80">
+                            <div
+                                class="team-member-info absolute px-5 pt-30 md:pt-20 pb-3 bottom-4 md:bottom-0 w-full bg-linear-to-t from-black to-tranparent text-white flex justify-between items-center">
                                 <div class="team-member-name-post">
-                                <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad</h3>
-                                <p class="team-member-position text-xs font-header text-gray-300">Creative Director</p>
-                            </div>
+                                    <h3 class="team-member-name text-secondary font-header font-medium">Ismail Ahmad
+                                    </h3>
+                                    <p class="team-member-position text-xs font-header text-gray-300">Creative Director
+                                    </p>
+                                </div>
 
-                            <div class="team-member-socials">
-                                <ul class="flex gap-3 items-list">
-                                    
-                                    <li><a href="#"><img src="img/icons/instagram.svg" alt="instagram" class="w-5 h-5"></a></li>
-                                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter" class="w-5 h-5"></a></li>
-                                 
-                                </ul>
+                                <div class="team-member-socials">
+                                    <ul class="flex gap-3 items-list">
+
+                                        <li><a href="#"><img src="/src/img/icons/instagram.svg" alt="instagram"
+                                                    class="w-5 h-5"></a></li>
+                                        <li><a href="#"><img src="/src/img/icons/twitter.svg" alt="twitter"
+                                                    class="w-5 h-5"></a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
-             </section>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -339,9 +395,15 @@
             <div class="footer-content grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
                 <!-- Footer Column -->
                 <div class="footer-column">
-                    <h3 class="text-white font-header font-bold text-xl mb-4">GAFCON</h3>
-                    <p class="text-white max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-                        quidem.</p>
+          <h3 class="text-white font-header font-bold text-xl mb-2">
+            <a href="/index.html" class="font-bold text-xl font-header">
+              <div class="logo w-15 h-15">
+                <img src="/src/img/logo-s.png" alt="Ganiu Furniture and Construction Logo">
+              </div>
+            </a>
+          </h3>
+          <p class="text-white max-w-sm text-sm">Experience the difference that passion for design, commitment to quality, and personalized service.</p>
+
 
                     <!-- Footer Column -->
                     <div class="footer-column mt-5 space-y-1">
@@ -390,11 +452,12 @@
                 <div class="footer-column">
                     <h3 class="text-white font-header text-xl mb-3">Quick Links</h3>
                     <ul class="text-white">
-                        <li class="mb-2"><a href="" class="hover:text-secondary">Home</a></li>
-                        <li class="mb-2"><a href="" class="hover:text-secondary">About</a></li>
-                        <li class="mb-2"><a href="" class="hover:text-secondary">Portfolio</a></li>
-                        <li class="mb-2"><a href="" class="hover:text-secondary">Blog</a></li>
-                        <li class="mb-2"><a href="" class="hover:text-secondary">Contact</a></li>
+                        <li class="mb-2"><a href="/index.html" class="hover:text-secondary">Home</a></li>
+                        <li class="mb-2"><a href="/src/about.html" class="hover:text-secondary">About</a></li>
+                        <li class="mb-2"><a href="/src/products.html" class="hover:text-secondary">Products</a></li>
+                        <li class="mb-2"><a href="/src/portfolio.html" class="hover:text-secondary">Portfolio</a></li>
+                        <li class="mb-2"><a href="/src/blog.html" class="hover:text-secondary">Blog</a></li>
+                        <li class="mb-2"><a href="/src/contact.html" class="hover:text-secondary">Contact</a></li>
                     </ul>
                 </div>
             </div>

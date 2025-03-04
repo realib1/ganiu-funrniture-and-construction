@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Navigation toggle menu
   const navMenu = document.querySelector(".nav-menuItems");

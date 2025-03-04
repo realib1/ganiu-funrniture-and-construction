@@ -9,6 +9,14 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/src/style.css">
 
+
+ <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/public/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/public/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/public/favicon/site.webmanifest" />
+
   <!-- JS -->
   <script type="module" src="/src/main.js" defer></script>
 
@@ -20,42 +28,41 @@
   <!-- Navigation Menu -->
   <div class="fixed top-0 w-full z-50 nav-div p-2 bg-primary text-secondary-light">
     <nav class="nav-menuMain lg:w-10/12 w-11/12 mx-auto py-4 flex justify-between items-center">
-        <a href="/index.html" class="font-bold text-xl font-header">
-        <div class="logo">
-          GAFCON
-          <!-- <img src="/src/logo.png" alt="Ganiu Furniture and Construction Logo"> -->
+       <a href="/index.html" class="font-bold text-xl font-header">
+        <div class="logo w-10 h-10">
+          
+          <img src="/src/img/logo-s.png" alt="Ganiu Furniture and Construction Logo">
         </div>
       </a>
 
-                 <!-- Menu Items -->
-            <div class="menuItems">
-                <ul
-                    class="nav-menuItems absolute top-18 md:top-0 w-full left-0 px-6 pb-5 md:p-0 space-y-5 md:space-y-0 bg-primary md:relative hidden md:flex flex-col md:flex-row justify-between items-center gap-5 font-header">
-                    <li class="nav-menuItem">
-                        <!-- Dropdown -->
-                        <a href="products.html" class="nav-link py-1 mx-1 hover:border-b-2">Products
-                            <svg class="w-6 h-6 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m8 10 4 4 4-4" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="nav-menuItem">
-                        <a href="about.html" class="nav-link py-1 mx-1 hover:border-b-2">About</a>
-                    </li>
-                    <li class="nav-menuItem">
-                        <a href="portfolio.html" class="nav-link py-1 mx-1 hover:border-b-2">Portfolio</a>
-                    </li>
-                    <li class="nav-menuItem">
-                        <a href="blog.html" class="nav-link py-1 mx-1 hover:border-b-2">Blog</a>
-                    </li>
-                    <li class="nav-menuItem">
-                        <a href="contact.html" class="nav-link py-1 mx-1 hover:border-b-2">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
+      <!-- Menu Items -->
+      <div class="menuItems">
+        <ul
+          class="nav-menuItems absolute top-20 md:top-0 w-full left-0 px-6 pb-5 md:p-0 space-y-5 md:space-y-0 bg-primary md:relative hidden md:flex flex-col md:flex-row justify-between items-center gap-5 font-header">
+          <li class="nav-menuItem">
+            <!-- Dropdown -->
+            <a href="/src/products.html" class="nav-link py-1 mx-1 hover:border-b-2">Products
+              <svg class="w-6 h-6 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m8 10 4 4 4-4" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="/src/about.html" class="nav-link py-1 mx-1 hover:border-b-2">About</a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="/src/portfolio.html" class="nav-link py-1 mx-1 hover:border-b-2">Portfolio</a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="/src/blog.html" class="nav-link py-1 mx-1 hover:border-b-2">Blog</a>
+          </li>
+          <li class="nav-menuItem">
+            <a href="/src/contact.html" class="nav-link py-1 mx-1 hover:border-b-2">Contact</a>
+          </li>
+        </ul>
+      </div>
 
       <!-- Mobile Menu -->
       <button class="nav-btn text-secondary-light md:hidden cursor-pointer" aria-controls="mobile-menu"
@@ -69,81 +76,82 @@
   </div>
 
   <!-- Main section -->
-   <main class="py-16">
+  <main class="py-16">
 
     <!-- Contact Header -->
-    <section class="hero-section relative h-32 flex justify-center items-center mt-16 w-11/12 mx-auto overflow-hidden bg-primary">
-        <div class="before:absolute before:inset-0
+    <section
+      class="hero-section relative h-32 flex justify-center items-center mt-16 w-11/12 mx-auto overflow-hidden bg-primary">
+      <div class="before:absolute before:inset-0
                    before:bg-[url('/src/img/bg/contact-bg.jpg')] 
                    before:bg-cover before:bg-center 
                    before:opacity-30  
                    before:z-0 before:content-['']">
-        </div>
-        <div class="hero-content relative mx-auto flex flex-col justify-center items-center text-center">
-         
-            <h1 class="text-white font-bold font-header text-4xl mb-4">Contact Us</h1>
+      </div>
+      <div class="hero-content relative mx-auto flex flex-col justify-center items-center text-center">
 
-        </div>
-      </section>
+        <h1 class="text-white font-bold font-header text-4xl mb-4">Contact Us</h1>
 
-      <!-- Contact details -->
-        <section class="contact-details">
-            <div class="container w-11/12 lg:w-10/12 mx-auto mt-16">
-            <div class="contact-form-content grid grid-cols-1 md:grid-cols-2 md:w-10/12  mx-auto">
-            <div class="contact-img">
-                <img src="/src/img/contactform.jpg" alt="Contact image" class="w-full h-full object-cover">
-            </div>
+      </div>
+    </section>
 
-            <!-- Contact info -->
-              <div class="contact-info bg-primary flex items-center p-10">
-                <div>
-                <h3 class="font-bold font-header text-secondary-light text-3xl mb-4">We’d love to hear <br> from you</h3>
+    <!-- Contact details -->
+    <section class="contact-details">
+      <div class="container w-11/12 lg:w-10/12 mx-auto mt-16">
+        <div class="contact-form-content grid grid-cols-1 md:grid-cols-2 md:w-10/12  mx-auto">
+          <div class="contact-img">
+            <img src="/src/img/contactform.jpg" alt="Contact image" class="w-full h-full object-cover">
+          </div>
 
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/address.svg" alt="" class="mt-1 size-6">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Address</h4>
-                        <p class="text-gray-200 font-medium py-2">Block 16, Tamale Street, Ghana</p>
-                    </div>
+          <!-- Contact info -->
+          <div class="contact-info bg-primary flex items-center p-10">
+            <div>
+              <h3 class="font-bold font-header text-secondary-light text-3xl mb-4">We’d love to hear <br> from you</h3>
+
+              <div class="address-info flex gap-5 mt-10">
+                <div class="icon">
+                  <img src="/src/img/icons/address.svg" alt="" class="mt-1 size-6">
                 </div>
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/email.svg" alt="" class="mt-1 size-5">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Email Address</h4>
-                        <p class="text-gray-200 font-medium py-2">hello@gafcon.com</p>
-                    </div>
+                <div class="address">
+                  <h4 class="text-secondary-light font-header text-xl">Address</h4>
+                  <p class="text-gray-200 font-medium py-2">Block 16, Tamale Street, Ghana</p>
                 </div>
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/phone.svg" alt="" class="mt-1 size-6">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Phone Number</h4>
-                        <p class="text-gray-200 font-medium py-2">+233 804 5671 986</p>
-                    </div>
-                </div>
-                <div class="address-info flex gap-5 mt-10">
-                    <div class="icon">
-                        <img src="/src/img/icons/operation.svg" alt="" class="mt-1 size-6">
-                    </div>
-                    <div class="address">
-                        <h4 class="text-secondary-light font-header text-xl">Hours Of Operation</h4>
-                        <p class="text-gray-200 font-medium pt-2">Weekdays: 08:00am - 06:00pm</p>
-                        <p class="text-gray-200 font-medium pt-1 pb-2">Weekends: 10:00am - 04:00pm</p>
-                    </div>
-                </div>
-               
-
-  </div>
               </div>
+              <div class="address-info flex gap-5 mt-10">
+                <div class="icon">
+                  <img src="/src/img/icons/email.svg" alt="" class="mt-1 size-5">
+                </div>
+                <div class="address">
+                  <h4 class="text-secondary-light font-header text-xl">Email Address</h4>
+                  <p class="text-gray-200 font-medium py-2">hello@gafcon.com</p>
+                </div>
+              </div>
+              <div class="address-info flex gap-5 mt-10">
+                <div class="icon">
+                  <img src="/src/img/icons/phone.svg" alt="" class="mt-1 size-6">
+                </div>
+                <div class="address">
+                  <h4 class="text-secondary-light font-header text-xl">Phone Number</h4>
+                  <p class="text-gray-200 font-medium py-2">+233 804 5671 986</p>
+                </div>
+              </div>
+              <div class="address-info flex gap-5 mt-10">
+                <div class="icon">
+                  <img src="/src/img/icons/operation.svg" alt="" class="mt-1 size-6">
+                </div>
+                <div class="address">
+                  <h4 class="text-secondary-light font-header text-xl">Hours Of Operation</h4>
+                  <p class="text-gray-200 font-medium pt-2">Weekdays: 08:00am - 06:00pm</p>
+                  <p class="text-gray-200 font-medium pt-1 pb-2">Weekends: 10:00am - 04:00pm</p>
+                </div>
+              </div>
+
+
             </div>
+          </div>
         </div>
-        </section>
-   </main>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-tertiary">
@@ -151,8 +159,14 @@
       <div class="footer-content grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
         <!-- Footer Column -->
         <div class="footer-column">
-          <h3 class="text-white font-header font-bold text-xl mb-4">GAFCON</h3>
-          <p class="text-white max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+<h3 class="text-white font-header font-bold text-xl mb-2">
+            <a href="/index.html" class="font-bold text-xl font-header">
+              <div class="logo w-15 h-15">
+                <img src="/src/img/logo-s.png" alt="Ganiu Furniture and Construction Logo">
+              </div>
+            </a>
+          </h3>
+          <p class="text-white max-w-sm text-sm">Experience the difference that passion for design, commitment to quality, and personalized service.</p>
 
           <!-- Footer Column -->
           <div class="footer-column mt-5 space-y-1">
@@ -197,11 +211,12 @@
         <div class="footer-column">
           <h3 class="text-white font-header text-xl mb-3">Quick Links</h3>
           <ul class="text-white">
-            <li class="mb-2"><a href="" class="hover:text-secondary">Home</a></li>
-            <li class="mb-2"><a href="" class="hover:text-secondary">About</a></li>
-            <li class="mb-2"><a href="" class="hover:text-secondary">Portfolio</a></li>
-            <li class="mb-2"><a href="" class="hover:text-secondary">Blog</a></li>
-            <li class="mb-2"><a href="" class="hover:text-secondary">Contact</a></li>
+            <li class="mb-2"><a href="/index.html" class="hover:text-secondary">Home</a></li>
+            <li class="mb-2"><a href="/src/about.html" class="hover:text-secondary">About</a></li>
+            <li class="mb-2"><a href="/src/products.html" class="hover:text-secondary">Products</a></li>
+            <li class="mb-2"><a href="/src/portfolio.html" class="hover:text-secondary">Portfolio</a></li>
+            <li class="mb-2"><a href="/src/blog.html" class="hover:text-secondary">Blog</a></li>
+            <li class="mb-2"><a href="/src/contact.html" class="hover:text-secondary">Contact</a></li>
           </ul>
         </div>
       </div>
