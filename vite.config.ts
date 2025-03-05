@@ -10,6 +10,7 @@ export default defineConfig({
         contact: "src/contact.html",
         products: "src/products.html",
         productview: "src/product-view.html",
+        categoryview: "src/category-view.html",
         portfolio: "src/portfolio.html",
         blog: "src/blog.html",
         blogpost: "src/blog-post.html",
